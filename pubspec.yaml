@@ -1,0 +1,31 @@
+name: pdf_crypto
+_author: David PHAM-VAN <dev.nfet.net@gmail.com>
+description: A companion library for the dart pdf library that enables cryptographic operations
+homepage: https://github.com/DavBfr/dart_pdf/tree/master/pdf
+issue_tracker: https://github.com/DavBfr/dart_pdf/issues
+publish_to: none
+version: 3.3.11
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  archive: ">=3.4.0 <4.1.0"
+  crypto: ^3.0.2
+  meta: ^1.7.0
+  pdf: ^3.11.3
+  pem: ^2.0.0
+  pkcs7: ^1.0.6
+  pointycastle: ^4.0.0
+
+dev_dependencies:
+  dartdoc: ^8.1.0
+  flutter_lints: ^5.0.0
+  path: ^1.8.3
+  test: ^1.20.0
+
+_dependency_overrides:
+  pdf:
+    path: ../dart_pdf/pdf
+  pkcs7:
+    path: ../dart_x509
